@@ -123,7 +123,7 @@ public class PlayerDataHttpTrigger
 
     [Function("DeletePlayer")]
     public async Task<HttpResponseData> DeletePlayer(
-        [HttpTrigger(AuthorizationLevel.Function, "delete", Route = "player/{id}")] HttpRequestData req,
+        [HttpTrigger(AuthorizationLevel.Function, "delete", Route = "players/{id}")] HttpRequestData req,
         string id)
     {
         var response = req.CreateResponse();
